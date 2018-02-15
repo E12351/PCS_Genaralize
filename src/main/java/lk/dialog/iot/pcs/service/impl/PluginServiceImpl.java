@@ -197,16 +197,16 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
     @Override
     public boolean uploadPluginFile(MultipartFile pluginFile) throws ProtocolConverterException {
 
-        if (pluginFile == null) {
-            logger.info("No plugin file received");
-            throw new ProtocolConverterException("No plugin file received");
-        }
+//        if (pluginFile == null) {
+//            logger.info("No plugin file received");
+//            throw new ProtocolConverterException("No plugin file received");
+//        }
 
         String pluginType = pluginFile.getContentType();
-        if ((pluginType == null) || (!(pluginType.trim().equalsIgnoreCase(Constants.PLUGIN_CONTENT_TYPE)))) {
-            logger.warn("Unsupported file type as : {}.", pluginType);
-            throw new ProtocolConverterException("Unsupported file type as : " + pluginType);
-        }
+//        if ((pluginType == null) || (!(pluginType.trim().equalsIgnoreCase(Constants.PLUGIN_CONTENT_TYPE)))) {
+//            logger.warn("Unsupported file type as : {}.", pluginType);
+//            throw new ProtocolConverterException("Unsupported file type as : " + pluginType);
+//        }
 
         boolean status = false;
         String newPluginName = pluginFile.getOriginalFilename();
