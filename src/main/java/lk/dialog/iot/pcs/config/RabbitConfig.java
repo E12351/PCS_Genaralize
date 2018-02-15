@@ -127,10 +127,8 @@ public class RabbitConfig {
     }
 
     @Bean
-    public SimpleMessageListenerContainer rabbitMessageListnerContainer(
-            @Qualifier("cachingConnectionFactory") CachingConnectionFactory cachingConnectionFactory) {
-        SimpleMessageListenerContainer rabbitMessageListnerContainer = new SimpleMessageListenerContainer(
-                cachingConnectionFactory);
+    public SimpleMessageListenerContainer rabbitMessageListnerContainer(@Qualifier("cachingConnectionFactory") CachingConnectionFactory cachingConnectionFactory) {
+        SimpleMessageListenerContainer rabbitMessageListnerContainer = new SimpleMessageListenerContainer( cachingConnectionFactory);
         rabbitMessageListnerContainer.setQueueNames(consumerQueueName);
         rabbitMessageListnerContainer.setConcurrentConsumers(numOfConsumers);
         return rabbitMessageListnerContainer;
@@ -144,18 +142,22 @@ public class RabbitConfig {
             @Override
             public void handleMessage(Message<?> message) throws MessagingException {
 
+//                logger.error("MessageHandler body : {}",message.toString());
+
                 if (message != null) {
                     Object messageObject = message.getPayload();
                     MessageHeaders messageHeaders = message.getHeaders();
+
                     if (messageObject != null && messageHeaders != null) {
                         try {
                             String payload = new String((byte[]) messageObject);
                             String subscribeTopic = (String) messageHeaders.get(Constants.AMQP_HEADER_TOPIC_KEY);
+
                             if (subscribeTopic != null) {
 
-                                MDC.put(Constants.LOG_IDENTIFIER_KEY,
-                                        payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
-                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
+//                                MDC.put(Constants.LOG_IDENTIFIER_KEY,
+//                                        payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
+//                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
 
                                 logger.info("Subscribe topic : {}, message: {}.", subscribeTopic, payload);
                                 consumerService.callExternalService(subscribeTopic, payload);
@@ -163,6 +165,7 @@ public class RabbitConfig {
                             } else {
                                 logger.info("Null message topic received");
                             }
+
                         } catch (ClassCastException e) {
                             logger.error("Subscribe parameters casting exception : {}.", e.getMessage());
                         }

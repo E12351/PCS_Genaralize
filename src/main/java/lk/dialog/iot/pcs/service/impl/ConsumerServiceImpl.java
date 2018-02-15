@@ -33,15 +33,23 @@ public class ConsumerServiceImpl implements ConsumerService {
     @Override
     public void callExternalService(String topic, String message) {
 
+        logger.error("callExternalService.");
+
         Plugin plugin = null;
 
         Collection<Plugin> plugins = pluginService.findAll();
+
         if (plugins != null && !(plugins.isEmpty())) {
             Iterator<Plugin> itrPlugins = plugins.iterator();
             while (itrPlugins.hasNext()) {
                 Plugin itrPlugin = itrPlugins.next();
-                if (topic.matches("^.+" + itrPlugin.getActionSubscribeTopicRegex() + "$")) {
+                System.out.println("XX : "+itrPlugin.getPlugunName());
+
+//                if (topic.matches("^.+" + itrPlugin.getActionSubscribeTopicRegex() + "$")) {
+                if (topic.matches(itrPlugin.getActionSubscribeTopicRegex())) {
                     plugin = itrPlugin;
+                    logger.info("plugin Found");
+
                     break;
                 }
             }
@@ -52,7 +60,7 @@ public class ConsumerServiceImpl implements ConsumerService {
         if (plugin != null) {
 
             String pluginName = plugin.getPlugunName();
-            
+
             PluginDto pluginDto = pluginService.fromPluginToPluginDto(plugin);
             if (pluginDto != null) {
 

@@ -6,13 +6,22 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import lk.dialog.iot.pcs.exception.impl.ProtocolConverterException;
+import lk.dialog.iot.pcs.service.ConsumerService;
+import lk.dialog.iot.pcs.service.PluginService;
+import lk.dialog.iot.pcs.service.impl.PluginServiceImpl;
+import lk.dialog.iot.pcs.util.Constants;
+import lk.dialog.iot.pcs.util.EnumTypes;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -31,12 +40,17 @@ import ro.fortsoft.pf4j.spring.SpringExtensionFactory;
 @SpringBootApplication
 @IntegrationComponentScan
 @EnableTransactionManagement
-@EnableCaching
+//@EnableCaching
 @EnableScheduling
 @EnableAsync
-public class Application {
+
+@ComponentScan({"lk.dialog.iot.pcs"})
+public class Application implements CommandLineRunner{
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+//    @Autowired
+//    private PluginService pluginService;
 
     @Value("${dir.plugins}")
     private String dirPlugins;
@@ -89,5 +103,14 @@ public class Application {
     @Bean
     public ObjectMapper objectMapper() {
         return new ObjectMapper();
+    }
+
+    @Override
+    public void run(String... strings) throws Exception {
+        logger.info("CommandLineRunner Started.");
+
+//        consumerservice.callExternalService("","");
+//        HashMap<String, Object> x = new HashMap<>();
+//        pluginService.executePluginOperation(x);
     }
 }

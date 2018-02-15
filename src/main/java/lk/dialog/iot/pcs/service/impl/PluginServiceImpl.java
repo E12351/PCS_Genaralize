@@ -129,10 +129,10 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
     @Override
     public Map<String, ?> executePluginOperation(Map<String, Object> receivedMap) throws ProtocolConverterException {
 
-        if (isDebugEnable) {
-            logger.debug("Plugin behavior received : {}.", receivedMap);
-            logger.debug("Plugin map : {}.", pluginMap);
-        }
+//        if (isDebugEnable) {
+//            logger.debug("Plugin behavior received : {}.", receivedMap);
+//            logger.debug("Plugin map : {}.", pluginMap);
+//        }
 
         Map<String, ?> responseMap = null;
 
@@ -147,18 +147,20 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
             throw new ProtocolConverterException("Null plugin name");
         }
 
-        PluginBehavior pluginBehavior = pluginMap.get(pluginName);
-        if (pluginBehavior == null) {
-            logger.info("No registered plugin found for plugin name : {}.", pluginName);
-            throw new ProtocolConverterException("No plugin exists as : " + pluginName);
-        }
-
+        PluginBehavior pluginBehavior = pluginMap.get("Nimbus_Obd_M1_Pcs_Plugin");
+//        if (pluginBehavior == null) {
+//            logger.info("No registered plugin found for plugin name : {}.", pluginName);
+//            throw new ProtocolConverterException("No plugin exists as : " + pluginName);
+//        }
+        System.out.println("StArTeD");
         try {
             responseMap = pluginBehavior.pluginOperation(receivedMap);
         } catch (Exception e) {
             logger.error("Plugin call exception {}.", e.getMessage());
-            throw new ProtocolConverterException("Plugin call exception : " + e.getMessage());
+//            throw new ProtocolConverterException("Plugin call exception : " + e.getMessage());
         }
+
+        System.out.println(responseMap.get("state"));
 
         if (isDebugEnable) {
             logger.debug("Plugin service response : {}.", responseMap);
@@ -180,6 +182,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
                 Iterator<PluginBehavior> itrPluginService = pluginList.iterator();
                 while (itrPluginService.hasNext()) {
                     PluginBehavior pluginBehavior = itrPluginService.next();
+                    System.out.println();
                     updatedPluginMap.put(pluginBehavior.toString(), pluginBehavior);
                 }
             }
@@ -196,6 +199,8 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
 
     @Override
     public boolean uploadPluginFile(MultipartFile pluginFile) throws ProtocolConverterException {
+
+        System.out.println("Upload function called.");
 
 //        if (pluginFile == null) {
 //            logger.info("No plugin file received");
@@ -221,6 +226,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
         } catch (IOException e) {
             logger.error("Plugin file upload exception : {}.", e.getMessage());
         }
+        System.out.println("Finished.");
         return status;
     }
 
