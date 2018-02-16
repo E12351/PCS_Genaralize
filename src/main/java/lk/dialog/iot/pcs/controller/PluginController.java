@@ -234,7 +234,7 @@ public class PluginController extends BaseController {
     public ResponseEntity<Boolean> savePluginFile(
             @RequestParam(value = "pluginFile", required = true) MultipartFile pluginFile, HttpServletRequest request)
             throws ProtocolConverterException {
-        setLogIdentifier(request);
+//        setLogIdentifier(request);
 //        checkAuthentication(request, INTERNAL_ADMIN);
         boolean status = pluginService.uploadPluginFile(pluginFile);
         System.out.println("Uploaded.");

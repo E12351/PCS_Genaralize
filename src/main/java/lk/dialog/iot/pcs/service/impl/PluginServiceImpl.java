@@ -131,7 +131,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
 
         if (isDebugEnable) {
             logger.debug("Plugin behavior received : {}.", receivedMap);
-            logger.debug("Plugin map : {}.", pluginMap);
+//            logger.debug("Plugin map : {}.", pluginMap);
         }
 
         Map<String, ?> responseMap = null;
@@ -148,6 +148,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
         }
 
         PluginBehavior pluginBehavior = pluginMap.get(pluginName);
+
         if (pluginBehavior == null) {
             logger.info("No registered plugin found for plugin name : {}.", pluginName);
             throw new ProtocolConverterException("No plugin exists as : " + pluginName);
@@ -206,10 +207,10 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
         }
 
         String pluginType = pluginFile.getContentType();
-        if ((pluginType == null) || (!(pluginType.trim().equalsIgnoreCase(Constants.PLUGIN_CONTENT_TYPE)))) {
-            logger.warn("Unsupported file type as : {}.", pluginType);
-            throw new ProtocolConverterException("Unsupported file type as : " + pluginType);
-        }
+//        if ((pluginType == null) || (!(pluginType.trim().equalsIgnoreCase(Constants.PLUGIN_CONTENT_TYPE)))) {
+//            logger.warn("Unsupported file type as : {}.", pluginType);
+//            throw new ProtocolConverterException("Unsupported file type as : " + pluginType);
+//        }
 
         boolean status = false;
         String newPluginName = pluginFile.getOriginalFilename();

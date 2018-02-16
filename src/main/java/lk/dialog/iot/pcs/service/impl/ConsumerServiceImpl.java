@@ -33,7 +33,7 @@ public class ConsumerServiceImpl implements ConsumerService {
     @Override
     public void callExternalService(String topic, String message) {
 
-        logger.error("callExternalService.");
+        logger.info("Topic : {} message : {}",topic,message);
 
         Plugin plugin = null;
 
@@ -43,7 +43,9 @@ public class ConsumerServiceImpl implements ConsumerService {
             Iterator<Plugin> itrPlugins = plugins.iterator();
             while (itrPlugins.hasNext()) {
                 Plugin itrPlugin = itrPlugins.next();
-                System.out.println("XX : "+itrPlugin.getPlugunName());
+
+                logger.info("plugin Name : {} actionSubcribeTopic : {}",itrPlugin.getPlugunName(),itrPlugin.getActionSubscribeTopicRegex());
+
 
 //                if (topic.matches("^.+" + itrPlugin.getActionSubscribeTopicRegex() + "$")) {
                 if (topic.matches(itrPlugin.getActionSubscribeTopicRegex())) {
