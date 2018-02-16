@@ -61,7 +61,7 @@ public class ConsumerServiceImpl implements ConsumerService {
 
             String pluginName = plugin.getPlugunName();
 
-            PluginDto pluginDto = pluginService.fromPluginToPluginDto(plugin);
+            PluginDto pluginDto = pluginService.fromPluginToPluginDto(plugin);      // find the pluginDto
             if (pluginDto != null) {
 
                 Map<String, Object> pluginSendingMap = new HashMap<String, Object>();

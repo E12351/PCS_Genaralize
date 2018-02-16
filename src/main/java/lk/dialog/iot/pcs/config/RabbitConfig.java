@@ -141,9 +141,6 @@ public class RabbitConfig {
 
             @Override
             public void handleMessage(Message<?> message) throws MessagingException {
-
-//                logger.error("MessageHandler body : {}",message.toString());
-
                 if (message != null) {
                     Object messageObject = message.getPayload();
                     MessageHeaders messageHeaders = message.getHeaders();
@@ -155,9 +152,8 @@ public class RabbitConfig {
 
                             if (subscribeTopic != null) {
 
-//                                MDC.put(Constants.LOG_IDENTIFIER_KEY,
-//                                        payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
-//                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
+                                MDC.put(Constants.LOG_IDENTIFIER_KEY, payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
+                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
 
                                 logger.info("Subscribe topic : {}, message: {}.", subscribeTopic, payload);
                                 consumerService.callExternalService(subscribeTopic, payload);

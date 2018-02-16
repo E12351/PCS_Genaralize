@@ -149,7 +149,7 @@ public class PluginController extends BaseController {
     @RequestMapping(value = "/api/plugins", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<PluginDto> createPlugin(@Valid @RequestBody PluginDto pluginDto, HttpServletRequest request)
             throws ProtocolConverterException {
-//        setLogIdentifier(request);
+        setLogIdentifier(request);
 //        checkAuthentication(request, INTERNAL_ADMIN);
         Plugin savedPlugin = pluginService.create(pluginService.fromPluginDtoToPlugin(pluginDto));
         return new ResponseEntity<PluginDto>(pluginService.fromPluginToPluginDto(savedPlugin), HttpStatus.CREATED);
@@ -234,7 +234,7 @@ public class PluginController extends BaseController {
     public ResponseEntity<Boolean> savePluginFile(
             @RequestParam(value = "pluginFile", required = true) MultipartFile pluginFile, HttpServletRequest request)
             throws ProtocolConverterException {
-//        setLogIdentifier(request);
+        setLogIdentifier(request);
 //        checkAuthentication(request, INTERNAL_ADMIN);
         boolean status = pluginService.uploadPluginFile(pluginFile);
         System.out.println("Uploaded.");

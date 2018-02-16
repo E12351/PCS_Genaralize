@@ -129,10 +129,10 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
     @Override
     public Map<String, ?> executePluginOperation(Map<String, Object> receivedMap) throws ProtocolConverterException {
 
-//        if (isDebugEnable) {
-//            logger.debug("Plugin behavior received : {}.", receivedMap);
-//            logger.debug("Plugin map : {}.", pluginMap);
-//        }
+        if (isDebugEnable) {
+            logger.debug("Plugin behavior received : {}.", receivedMap);
+            logger.debug("Plugin map : {}.", pluginMap);
+        }
 
         Map<String, ?> responseMap = null;
 
@@ -147,20 +147,18 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
             throw new ProtocolConverterException("Null plugin name");
         }
 
-        PluginBehavior pluginBehavior = pluginMap.get("Nimbus_Obd_M1_Pcs_Plugin");
-//        if (pluginBehavior == null) {
-//            logger.info("No registered plugin found for plugin name : {}.", pluginName);
-//            throw new ProtocolConverterException("No plugin exists as : " + pluginName);
-//        }
-        System.out.println("StArTeD");
+        PluginBehavior pluginBehavior = pluginMap.get(pluginName);
+        if (pluginBehavior == null) {
+            logger.info("No registered plugin found for plugin name : {}.", pluginName);
+            throw new ProtocolConverterException("No plugin exists as : " + pluginName);
+        }
+
         try {
             responseMap = pluginBehavior.pluginOperation(receivedMap);
         } catch (Exception e) {
             logger.error("Plugin call exception {}.", e.getMessage());
-//            throw new ProtocolConverterException("Plugin call exception : " + e.getMessage());
+            throw new ProtocolConverterException("Plugin call exception : " + e.getMessage());
         }
-
-        System.out.println(responseMap.get("state"));
 
         if (isDebugEnable) {
             logger.debug("Plugin service response : {}.", responseMap);
@@ -202,16 +200,16 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
 
         System.out.println("Upload function called.");
 
-//        if (pluginFile == null) {
-//            logger.info("No plugin file received");
-//            throw new ProtocolConverterException("No plugin file received");
-//        }
+        if (pluginFile == null) {
+            logger.info("No plugin file received");
+            throw new ProtocolConverterException("No plugin file received");
+        }
 
         String pluginType = pluginFile.getContentType();
-//        if ((pluginType == null) || (!(pluginType.trim().equalsIgnoreCase(Constants.PLUGIN_CONTENT_TYPE)))) {
-//            logger.warn("Unsupported file type as : {}.", pluginType);
-//            throw new ProtocolConverterException("Unsupported file type as : " + pluginType);
-//        }
+        if ((pluginType == null) || (!(pluginType.trim().equalsIgnoreCase(Constants.PLUGIN_CONTENT_TYPE)))) {
+            logger.warn("Unsupported file type as : {}.", pluginType);
+            throw new ProtocolConverterException("Unsupported file type as : " + pluginType);
+        }
 
         boolean status = false;
         String newPluginName = pluginFile.getOriginalFilename();
