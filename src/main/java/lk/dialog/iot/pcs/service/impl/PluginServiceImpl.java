@@ -130,7 +130,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
     public Map<String, ?> executePluginOperation(Map<String, Object> receivedMap) throws ProtocolConverterException {
 
         if (isDebugEnable) {
-            logger.debug("Plugin behavior received : {}.", receivedMap);
+//            logger.debug("Plugin behavior received : {}.", receivedMap);
 //            logger.debug("Plugin map : {}.", pluginMap);
         }
 

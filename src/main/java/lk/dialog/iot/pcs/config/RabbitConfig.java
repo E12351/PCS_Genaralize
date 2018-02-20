@@ -153,9 +153,9 @@ public class RabbitConfig {
                             if (subscribeTopic != null) {
 
                                 MDC.put(Constants.LOG_IDENTIFIER_KEY, payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
-                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
+//                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
 
-                                logger.info("Subscribe topic : {}, message: {}.", subscribeTopic, payload);
+//                                logger.info("Subscribe topic : {}, message: {}.", subscribeTopic, payload);
                                 consumerService.callExternalService(subscribeTopic, payload);
 
                             } else {
