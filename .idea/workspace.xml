@@ -2,31 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d82e38e0-2f4d-4c96-aae8-d7c4f7a38ef7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/NimbusObdM1PcsPlugin/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/NimbusObdM1PcsPlugin/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/nimbusObd/m1/NimbusObdM1PcsPlugin$NimbusObdM1PcsInner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/nimbusObd/m1/NimbusObdM1PcsPlugin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/nimbusObd/m1/util/NimbusObdM1PcsConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/NimbusObdM1PcsPlugin/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/NimbusObdM1PcsPlugin/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/nimbusObd/m1/NimbusObdM1PcsPlugin$NimbusObdM1PcsInner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/nimbusObd/m1/NimbusObdM1PcsPlugin.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/nimbusObd/m1/util/NimbusObdM1PcsConstants.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8.zip" afterPath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lk/dialog/iot/pcs/config/RabbitConfig$1.class" afterPath="$PROJECT_DIR$/target/classes/lk/dialog/iot/pcs/config/RabbitConfig$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPluginInnerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/util/HuaweiPisConstants.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8.zip" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protocol-converter-service-0.0.1-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/protocol-converter-service-0.0.1-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/protocol-converter-service-0.0.1-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/protocol-converter-service-0.0.1-SNAPSHOT.jar.original" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin$HuaweiPisPluginInner.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin$HuaweiPisPluginInner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Parameter/AuthHandle.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Parameter/AuthHandle.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Parameter/Constant.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Parameter/Constant.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Request/AuthReq.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Request/AuthReq.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/HttpsUtil.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/HttpsUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/JsonUtil.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/JsonUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/StreamClosedHttpResponse.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/StreamClosedHttpResponse.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/StreamUtil.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/StreamUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/StringUtil.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Utils/StringUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/extensions.idx" afterPath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/extensions.idx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.properties" afterPath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.xml" afterPath="$PROJECT_DIR$/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/config/RabbitConfig.java" afterPath="$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/config/RabbitConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/ConsumerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/ConsumerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/extensions.idx" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/extensions.idx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.properties" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.xml" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.xml" />
@@ -61,8 +50,8 @@
       <file leaf-file-name="RabbitConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/config/RabbitConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="158" column="93" lean-forward="true" selection-start-line="158" selection-start-column="93" selection-end-line="158" selection-end-column="93" />
+            <state relative-caret-position="1476">
+              <caret line="158" column="93" lean-forward="false" selection-start-line="158" selection-start-column="93" selection-end-line="158" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -71,8 +60,8 @@
       <file leaf-file-name="ConsumerServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/ConsumerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-98">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
-              <caret line="133" column="58" lean-forward="true" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="58" />
+              <caret line="133" column="58" lean-forward="false" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -91,7 +80,7 @@
       <file leaf-file-name="PluginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/controller/PluginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
+            <state relative-caret-position="192">
               <caret line="37" column="52" lean-forward="false" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
               <folding />
             </state>
@@ -230,8 +219,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1370" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -779,6 +768,7 @@
       <workItem from="1518781392043" duration="1511000" />
       <workItem from="1519021807938" duration="253000" />
       <workItem from="1519099342491" duration="269000" />
+      <workItem from="1519187462018" duration="15000" />
     </task>
     <servers />
   </component>
@@ -815,7 +805,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49351000" />
+    <option name="totallyTimeSpent" value="49366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -827,8 +817,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1370" height="772" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.4969743" order="6" side_tool="false" content_ui="tabs" />
@@ -837,7 +827,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8924731" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8924731" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1053,7 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-420">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1221,23 +1210,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/config/RabbitConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="158" column="93" lean-forward="true" selection-start-line="158" selection-start-column="93" selection-end-line="158" selection-end-column="93" />
+        <state relative-caret-position="1476">
+          <caret line="158" column="93" lean-forward="false" selection-start-line="158" selection-start-column="93" selection-end-line="158" selection-end-column="93" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/ConsumerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/controller/PluginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
+        <state relative-caret-position="192">
           <caret line="37" column="52" lean-forward="false" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
           <folding />
         </state>
@@ -1246,7 +1235,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="133" column="58" lean-forward="true" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="58" />
+          <caret line="133" column="58" lean-forward="false" selection-start-line="133" selection-start-column="58" selection-end-line="133" selection-end-column="58" />
           <folding />
         </state>
       </provider>
