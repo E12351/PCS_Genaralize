@@ -152,7 +152,9 @@ public class RabbitConfig {
 
                             if (subscribeTopic != null) {
 
-                                MDC.put(Constants.LOG_IDENTIFIER_KEY, payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
+//                                MDC.put(Constants.LOG_IDENTIFIER_KEY, payload.substring(payload.length() - Constants.LOG_IDENTIFIER_LENGTH));
+                                MDC.put(Constants.LOG_IDENTIFIER_KEY, String.valueOf(Constants.LOG_IDENTIFIER_LENGTH));
+
 //                                payload = payload.substring(0, payload.length() - Constants.LOG_IDENTIFIER_LENGTH);
 
 //                                logger.info("Subscribe topic : {}, message: {}.", subscribeTopic, payload);

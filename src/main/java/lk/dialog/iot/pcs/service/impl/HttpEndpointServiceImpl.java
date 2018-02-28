@@ -53,7 +53,7 @@ public class HttpEndpointServiceImpl implements HttpEndpointService {
                 logger.info("Null pluginDto mapped for endpoint : {}.", endpoint);
                 throw new ProtocolConverterException("Null pluginDto mapped for endpoint : " + endpoint);
             }
-
+//
             Map<String, Object> pluginSendingMap = new HashMap<String, Object>();
             pluginSendingMap.put(Constants.OPERATION_KEY, EnumTypes.OperationTypes.HTTP_TO_BROKER_OPERATION.getName());
             pluginSendingMap.put(Constants.PLUGIN_NAME_KEY, plugin.getPlugunName());
@@ -64,21 +64,22 @@ public class HttpEndpointServiceImpl implements HttpEndpointService {
             } catch (ProtocolConverterException e) {
                 logger.error("Plugin http request execution exception : {}.", e.getMessage());
                 throw new ProtocolConverterException("Http request execution exception : " + e.getMessage());
-            }
-        } else {
-
-            try {
-                MqttPublishDto mqttPublishDto = new MqttPublishDto();
-                mqttPublishDto.setTopic(endpoint + "/" + prefix);
-                mqttPublishDto.setMessage(objectMapper.writeValueAsString(messageObject));
-                mttqPublisherService.publishMessage(mqttPublishDto);
-                if (isDebudEnable) {
-                    logger.debug("No plugin found for endpoint : {}, and publishing to common.", endpoint);
-                }
-            } catch (JsonProcessingException e) {
-                logger.error("Json convertion exception : {}.", e.getMessage());
-                throw new ProtocolConverterException("Http request execution exception : " + e.getMessage());
-            }
+//            }
+        }
+//        else {
+//
+//            try {
+//                MqttPublishDto mqttPublishDto = new MqttPublishDto();
+//                mqttPublishDto.setTopic(endpoint + "/" + prefix);
+//                mqttPublishDto.setMessage(objectMapper.writeValueAsString(messageObject));
+//                mttqPublisherService.publishMessage(mqttPublishDto);
+//                if (isDebudEnable) {
+//                    logger.debug("No plugin found for endpoint : {}, and publishing to common.", endpoint);
+//                }
+//            } catch (JsonProcessingException e) {
+//                logger.error("Json convertion exception : {}.", e.getMessage());
+//                throw new ProtocolConverterException("Http request execution exception : " + e.getMessage());
+//            }
         }
     }
 }

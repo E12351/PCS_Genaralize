@@ -130,7 +130,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
     public Map<String, ?> executePluginOperation(Map<String, Object> receivedMap) throws ProtocolConverterException {
 
         if (isDebugEnable) {
-//            logger.debug("Plugin behavior received : {}.", receivedMap);
+            logger.debug("Plugin behavior received : {}.", receivedMap);
 //            logger.debug("Plugin map : {}.", pluginMap);
         }
 
@@ -225,7 +225,7 @@ public class PluginServiceImpl implements PluginService, PluginDbService {
         } catch (IOException e) {
             logger.error("Plugin file upload exception : {}.", e.getMessage());
         }
-        System.out.println("Finished.");
+//        System.out.println("Finished.");
         return status;
     }
 

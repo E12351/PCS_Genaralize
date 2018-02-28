@@ -37,7 +37,7 @@ public class HttpEndpointController extends BaseController {
      * @apiSuccessExample {json} Success-Response:
             {"status": "Success"}
      */
-    @RequestMapping(value = "/api/pcs/{endpoint}", method = RequestMethod.POST)
+    @RequestMapping(value = "/api/pis/{endpoint}", method = RequestMethod.POST)
     public ResponseEntity<String> captureEvent(@PathVariable("endpoint") String endpoint,
             @RequestBody(required = false) Object body, HttpServletRequest request) throws ProtocolConverterException {
         setLogIdentifier(request);

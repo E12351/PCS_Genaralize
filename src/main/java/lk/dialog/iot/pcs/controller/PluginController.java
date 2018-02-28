@@ -237,7 +237,7 @@ public class PluginController extends BaseController {
 //        setLogIdentifier(request);
 //        checkAuthentication(request, INTERNAL_ADMIN);
         boolean status = pluginService.uploadPluginFile(pluginFile);
-        System.out.println("Uploaded.");
+//        System.out.println("Uploaded.");
         if (status) {
             return new ResponseEntity<Boolean>(HttpStatus.OK);
         } else {

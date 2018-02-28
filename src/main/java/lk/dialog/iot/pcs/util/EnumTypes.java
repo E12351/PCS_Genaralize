@@ -5,7 +5,7 @@ public class EnumTypes {
     public enum OperationTypes {
 
         HTTP_TO_BROKER_OPERATION("httpCalltoBroker"),
-        TO_EXTERNAL_OPERATION("toExternalService"),
+        TO_EXTERNAL_OPERATION("toExternalDevices"),         // changed Services to Devices.
         SCHEDULE__OPERATION("schedule");
 
         private final String name;
