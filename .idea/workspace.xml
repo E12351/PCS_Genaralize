@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d82e38e0-2f4d-4c96-aae8-d7c4f7a38ef7" name="Default" comment="" />
+    <list default="true" id="d82e38e0-2f4d-4c96-aae8-d7c4f7a38ef7" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8.zip" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin$HuaweiPisPluginInner.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin$HuaweiPisPluginInner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/HuaweiPisPlugin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Request/DataCollection.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/Request/DataCollection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/method/DeviceManagementMethod.class" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/lk/dialog/iot/pcs/behavior/plugin/huaweiPis/method/DeviceManagementMethod.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.properties" afterPath="$PROJECT_DIR$/target/plugins/HuaweiPisPlugin-0.0.8/classes/META-INF/maven/lk.dialog.iot/HuaweiPisPlugin/pom.properties" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,8 +90,8 @@
       <file leaf-file-name="PluginServiceImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="145" column="68" lean-forward="false" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="68" />
+            <state relative-caret-position="142">
+              <caret line="134" column="9" lean-forward="true" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -926,7 +934,7 @@
       <workItem from="1519187462018" duration="327000" />
       <workItem from="1519635159576" duration="730000" />
       <workItem from="1519635993397" duration="772000" />
-      <workItem from="1519700727313" duration="7853000" />
+      <workItem from="1519700727313" duration="8461000" />
     </task>
     <servers />
   </component>
@@ -963,7 +971,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59033000" />
+    <option name="totallyTimeSpent" value="59641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1425,8 +1433,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lk/dialog/iot/pcs/service/impl/PluginServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="145" column="68" lean-forward="false" selection-start-line="145" selection-start-column="68" selection-end-line="145" selection-end-column="68" />
+        <state relative-caret-position="142">
+          <caret line="134" column="9" lean-forward="true" selection-start-line="134" selection-start-column="9" selection-end-line="134" selection-end-column="9" />
           <folding />
         </state>
       </provider>
