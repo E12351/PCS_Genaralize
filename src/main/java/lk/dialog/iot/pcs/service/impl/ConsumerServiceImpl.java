@@ -43,15 +43,11 @@ public class ConsumerServiceImpl implements ConsumerService {
             Iterator<Plugin> itrPlugins = plugins.iterator();
             while (itrPlugins.hasNext()) {
                 Plugin itrPlugin = itrPlugins.next();
-
 //                logger.info("plugin Name : {} actionSubcribeTopic : {}",itrPlugin.getPlugunName(),itrPlugin.getActionSubscribeTopicRegex());
-
-
-//                if (topic.matches("^.+" + itrPlugin.getActionSubscribeTopicRegex() + "$")) {
-                if (topic.matches(itrPlugin.getActionSubscribeTopicRegex())) {
+                if (topic.matches("^.+" + itrPlugin.getActionSubscribeTopicRegex() + "$")) {
+//                if (topic.matches(itrPlugin.getActionSubscribeTopicRegex())) {
                     plugin = itrPlugin;
                     logger.info("plugin Found");
-
                     break;
                 }
             }
